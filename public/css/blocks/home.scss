@@ -1,0 +1,586 @@
+.home{
+  &--top{
+    min-height: 699px;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &--about{
+    padding-top: 40px;
+    background-color: rgb(244, 245, 245);
+
+  }
+  &--work{
+    padding: 45px 0;
+    background-color: rgb(244, 245, 245);
+
+  }
+  &--calculator{
+    width: 645px;
+    margin-top: 132px
+  }
+
+
+
+  &--row-top{
+
+  }
+  &--col-conditions{
+    width: 50%;
+    height: 100%;
+    &__2{
+      background-image: url("../img/condition_bg.png");
+      background-position: left bottom;
+      background-size: auto 80%;
+      background-repeat: no-repeat;
+      min-height: 900px;
+    }
+
+  }
+
+  &--conditions-item{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 410px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(37, 37, 37);
+    box-sizing: border-box;
+    &__1{
+      background-image: url("../img/conditions-item-1.png");
+    }
+    &__2{
+      background-image: url("../img/conditions-item-2.png");
+    }
+    &__3{
+      background-image: url("../img/conditions-item-3.png");
+    }
+    &__4{
+      background-image: url("../img/conditions-item-4.png");
+    }
+
+  }
+  &--conditions-header{
+    font-size: 1.8em;
+    color: #272727;
+  }
+  &--conditions-text{
+    font-size: 1.4em;
+    color: #9a9a9a;
+  }
+  &--advantages{
+    background: #f4f4f4;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+  &--advantages-col{
+    border-radius: 23px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 17.25px 5.75px rgba(0, 0, 0, 0.1);
+    width: 383px;
+    height: 150px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    &__1{
+      margin-top: 60px;
+    }
+    &__2{
+      margin-top: 30px;
+    }
+
+
+  }
+  &--advantages-ico{
+    width: 87px;
+    height: 87px;
+    margin-right: 20px;
+    &__1{
+      background-image: url("../img/home--advantages-ico__1.png");
+    }
+    &__2{
+      background-image: url("../img/home--advantages-ico__2.png");
+    }
+    &__3{
+      background-image: url("../img/home--advantages-ico__3.png");
+    }
+  }
+  &--advantages-text{
+    color: rgb(39, 39, 39);
+    font-size: 1.6em;
+
+  }
+
+
+  &--work-col{
+    &__1{
+      width: 50%;
+    }
+    &__2{
+      background-image: url("../img/home--work-col__2.png");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: right;
+      width: 50%;
+    }
+  }
+  &--work-item{
+    border-radius: 23px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 17.25px 5.75px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 384px;
+    height: 255px;
+    padding: 31px;
+  }
+  &--work-text{
+    font-size: 1.6em;
+    color: rgb(39, 39, 39);
+    margin-top: 24px;
+    font-weight: bold;
+  }
+  &--work-content{
+    margin-top:15px;
+    color: #b0b0b0;
+    font-size: 1.6em;
+  }
+  &--work-btn{
+    background-image: -moz-linear-gradient( 0deg, rgb(169,226,179) 0%, rgb(86,210,157) 48%, rgb(104,199,198) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(169,226,179) 0%, rgb(86,210,157) 48%, rgb(104,199,198) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(169,226,179) 0%, rgb(86,210,157) 48%, rgb(104,199,198) 100%);
+    box-shadow: 0px 5px 14.96px 2.04px rgba(0, 0, 0, 0.07);
+    margin: 55px auto 0 auto;
+    &:hover{
+
+      background-image: -moz-linear-gradient( 0deg, rgb(104,199,198) 0%, rgb(86,210,157) 46%, rgb(169,226,179) 100%);
+      background-image: -webkit-linear-gradient( 0deg, rgb(104,199,198) 0%, rgb(86,210,157) 46%, rgb(169,226,179) 100%);
+      background-image: -ms-linear-gradient( 0deg, rgb(104,199,198) 0%, rgb(86,210,157) 46%, rgb(169,226,179) 100%);
+    }
+  }
+  &--work-ico{
+    width: 87px;
+    height: 87px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__1{
+      background-image: url("../img/home--work-ico__1.png");
+    }
+    &__2{
+      background-image: url("../img/home--work-ico__2.png");
+    }
+    &__3{
+      background-image: url("../img/home--work-ico__3.png");
+    }
+  }
+
+  &--slider{
+    padding: 50px 0;
+  }
+
+
+
+
+  &--about-col{
+    max-width: 600px;
+    width: 45%;
+    font-size: 1.4em;
+    text-align: justify;
+    p{
+
+    }
+    h3{
+
+    }
+    ul{
+      display: block;
+    }
+  }
+}
+@media (max-width:1300px){
+  .home{
+    &--advantages-col{
+      padding: 15px;
+      width: 343px;
+      height: 110px;
+      box-shadow: none;
+    }
+    &--advantages-ico {
+      width: 77px;
+      height: 77px;
+      background-size: 100% 100%;
+    }
+    &--col-conditions{
+      &__1{
+        width: 60%;
+      }
+      &__2{
+        width: 40%;
+        background-size:  90% auto;
+        background-position: bottom right;
+        min-height: 750px;
+      }
+    }
+    &--work-item{
+      width: 32%;
+    }
+    &--work-ico {
+      width: 75px;
+      height: 75px;
+      background-size: 100% 100%;
+    }
+  }
+}
+@media (max-width:1150px){
+  .home{
+    &--advantages-col{
+      padding: 10px;
+      width: 290px;
+      height: 100px;
+
+    }
+    &--advantages-ico {
+      width: 60px;
+      height: 60px;
+
+    }
+    &--advantages-text{
+      font-size: 1.4em;
+    }
+    &--conditions-item{
+      height: 364px;
+    }
+    &--work-item{
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width:1100px){
+  .home {
+
+    &--about-col{
+      width: 45%;
+    }
+    &--getting{
+      background-position: right -197px top 0;
+    }
+    &--conditions-item{
+      height: 344px;
+    }
+
+  }
+}
+@media (max-width:1051px){
+  .home {
+    &--top {
+
+    }
+    &--about{
+      background-image: none;
+    }
+    &--work-item{
+      margin-left: 0
+    }
+    &--advantages-col{
+
+      width: 250px;
+      height: 70px;
+
+    }
+    &--advantages-ico {
+      width: 50px;
+      height: 50px;
+
+    }
+    &--advantages-text{
+      font-size: 1.2em;
+    }
+    &--col-conditions{
+      &__1{
+        width: 60%;
+      }
+      &__2{
+
+        min-height: 700px;
+      }
+    }
+
+  }
+}
+@media (max-width:900px){
+  .home {
+    &--work-item{
+      width: 48%;
+    }
+
+  }
+}
+@media (max-width:870px){
+  .home {
+
+    &--calculator{
+      justify-content: center;
+      padding-top: 90px;
+    }
+    &--advantages-col{
+
+      width: 200px;
+      height: 70px;
+
+    }
+    &--advantages-ico {
+      width: 50px;
+      height: 50px;
+
+    }
+    &--advantages-text{
+      font-size: 1.2em;
+    }
+
+  }
+}
+@media (max-width:780px){
+  .home {
+    &--col-conditions{
+      &__1{
+        width: 100%;
+      }
+      &__2{
+        width: 100%;
+        min-height: 600px;
+      }
+    }
+    &--conditions-item{
+      height: 416px;
+    }
+  }
+}
+@media (max-width:770px){
+  .home {
+    &--getting-item{
+      margin-left: 0;
+      width: 100%;
+      align-content: center;
+      display: flex;
+      padding: 15px ;
+    }
+    &--getting-text{
+      line-height: 1.2;
+    }
+
+
+  }
+}
+@media (max-width:764px){
+  .home {
+    &--about-col{
+      width: 100%;
+    }
+    &--row-top{
+      justify-content: center;
+    }
+    &--getting-item{
+      margin-left: 0;
+      width: 100%;
+      align-content: center;
+      display: flex;
+      padding: 15px ;
+      margin-bottom: 23px;
+    }
+
+    &--calculator {
+      justify-content: center;
+      padding-top: 0px;
+      width: 100%;
+    }
+    &--work-col{
+      width: 100%;
+      &__2{
+        height: 290px;
+      }
+    }
+  }
+
+}
+@media (max-width:680px){
+  .home {
+
+
+    &--advantages-col{
+      padding: 30px;
+      width: 100%;
+      height: 150px;
+      margin-top: 20px;
+
+    }
+    &--advantages-ico {
+      width: 80px;
+      height: 80px;
+
+    }
+    &--advantages-text{
+      font-size: 1.8em;
+    }
+    &--conditions-item{
+      height: 400px;
+    }
+    &--col-conditions{
+      &__1{
+
+      }
+      &__2{
+        min-height: 450px;
+      }
+    }
+    &--row-work{
+      justify-content: center;
+    }
+    &--work-item{
+      width: 90%;
+    }
+
+  }
+}
+@media (max-width:590px){
+  .home {
+
+    &--conditions-item{
+      height: 360px;
+    }
+    &--col-conditions{
+
+      &__2{
+        min-height: 400px;
+      }
+    }
+
+  }
+}
+@media (max-width:530px){
+  .home {
+
+    &--conditions-item{
+      height: 340px;
+    }
+    &--col-conditions{
+
+      &__2{
+        min-height: 350px;
+      }
+    }
+    &--conditions-header {
+      font-size: 1.6em;
+    }
+
+  }
+}
+@media (max-width:500px){
+  .home {
+
+    &--conditions-item{
+      height: 320px;
+    }
+    &--col-conditions{
+
+      &__2{
+        min-height: 330px;
+      }
+    }
+
+
+  }
+}
+
+
+@media (max-width:464px){
+  .home {
+    &--top{
+      min-height: 865px;
+      background-size: 100% auto;
+      background-image: url("../img/bg-mob.png");
+      background-position: bottom center;
+    }
+    &--getting-text{
+      font-size: 1.45em;
+    }
+
+    &--work-content {
+      width: 100%;
+
+    }
+    &--work-btn{
+      width: 100%;
+    }
+
+
+    &--conditions-text{
+      display: none;
+    }
+    &--advantages-col{
+      padding: 15px;
+      width: 100%;
+      height: 70px;
+      margin-top: 15px;
+
+    }
+    &--advantages-ico {
+      width: 50px;
+      height: 50px;
+
+    }
+    &--advantages-text{
+      font-size: 1.6em;
+    }
+    &--conditions-item{
+      height: 430px;
+      width: 100%;
+      background-size: 80% auto;
+      background-position: top center;
+    }
+    &--col-conditions{
+
+      &__2{
+        min-height: 330px;
+      }
+    }
+    &--conditions-header {
+      font-size: 1.8em;
+    }
+    &--work-item{
+      width: 100%;
+      box-shadow: none;
+      padding: 15px;
+    }
+
+  }
+}
+@media (max-width:371px){
+  .home {
+
+    &--getting{
+      min-height: 954px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-top: 183px;
+      margin-top: -183px;
+    }
+    &--advantages-col{
+
+    }
+    &--work-text{
+      font-size: 1.8em;
+    }
+
+    &--conditions-item{
+      height: 400px;
+      width: 100%;
+      background-size: 100% auto;
+
+    }
+
+  }
+}

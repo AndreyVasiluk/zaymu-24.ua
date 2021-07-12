@@ -1,0 +1,179 @@
+.contacts{
+  padding-top: 60px;
+  &--box{
+    position: relative;
+    min-height: 600px;
+    width: 600px;
+
+  }
+  &--bg{
+    background-image: url("../img/contact_bg.png");
+    background-position: bottom;
+    background-size: 100% auto;
+    min-height: 800px;
+    width: 50%;
+    background-repeat: no-repeat;
+
+
+  }
+  &--calculator{
+    margin-top: 0;
+  }
+  &--email{
+    background-image: url("../img/email-icon.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+  }
+  &--email-text{
+    margin-left: 15px;
+    color: #272727;
+    line-height: 1.2;
+    font-size: 1.6em;
+  }
+  &--p{
+    color: #272727;
+    line-height: 1.2;
+    font-size: 1.5em;
+    a{
+      color: #a4dddc;
+      font-weight: bold;
+    }
+  }
+}
+@media (max-width:1318px){
+  .contacts {
+
+    &--box {
+      width: 500px;
+
+    }
+
+  }
+}
+@media (max-width:1218px){
+  .contacts {
+    &--box {
+      width: 400px;
+
+    }
+  }
+}
+@media (max-width:1118px){
+  .contacts{
+    &--calculator{
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 500px;
+    }
+
+  }
+}
+@media (max-width:1018px){
+  .contacts{
+    &--calculator{
+        width: 400px;
+    }
+
+  }
+}
+@media (max-width:918px){
+  .contacts{
+    &--box {
+      width: 350px;
+
+    }
+    &--calculator{
+        width: 350px;
+    }
+
+
+  }
+}
+@media (max-width:814px){
+  .contacts {
+
+    &--box {
+      background-image: none;;
+      background-position: bottom;
+      min-height: initial;
+      width: 100%;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+    }
+    &--bg{
+      background-position: bottom;
+      background-size: 100% auto;
+      min-height: 800px;
+      width: 100%;
+      background-repeat: no-repeat;
+
+
+    }
+
+    &--calculator {
+      margin-top: 0;
+      width: 100%;
+
+
+      background-position: bottom;
+      min-height: initial;
+      background-repeat: no-repeat;
+
+      &.calculator--box{
+        box-shadow: none;
+      }
+    }
+  }
+}
+@media (max-width:700px){
+  .contacts {
+    &--bg{
+
+      min-height: 750px;
+
+
+
+    }
+  }
+}
+@media (max-width:600px){
+  .contacts {
+    &--bg{
+      min-height: 700px;
+
+    }
+  }
+}
+@media (max-width:500px){
+  .contacts {
+    &--bg{
+      min-height: 650px;
+
+    }
+  }
+}
+@media (max-width:400px){
+  .contacts {
+
+    &--bg{
+      min-height: 450px;
+
+    }
+
+    &--calculator {
+      margin-top: 0;
+      width: 100%;
+
+
+      background-position: bottom;
+
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      &.calculator--box{
+        box-shadow: none;
+      }
+    }
+  }
+}

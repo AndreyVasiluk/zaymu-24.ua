@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        <meta name="description" content="{% block description %}Welcome!{% endblock %}">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet" />
+        <link rel="shortcut icon" href="{{ asset('/img/favicon.ico') }}" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block stylesheets %}
+
+        {% endblock %}
+
+
+    </head>
+    <body>
+    <input type="hidden" id="locale" value="{{ app.request.locale }}">
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
+        {{ include("include/header.html.twig") }}
+            {% block body %}{% endblock %}
+        {{ include("include/footer.html.twig") }}
+        <script type="text/javascript" src="{{asset('js/wow.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+
+        {% block javascripts %}{% endblock %}
+    </body>
+
+</html>

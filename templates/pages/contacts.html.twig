@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Контакты - Zaymu-24{% endblock %}
+{% block description %}Свяжитесь с нами ✓ Рассчитать проценты кредита онлайн ✓ Подайте заявку на кредит не выходя из дома{% endblock %}
+
+{% block body %}
+    <main>
+
+
+        <section class="contacts">
+            <div class="container">
+
+
+                <div class="row row--space-between">
+                    <div class="contacts--box">
+                        <div class="header--block">
+
+                            <h2 class="header--h2 wow slideInLeft">{{ 'contacts-title'|trans }}</h2>
+                        </div>
+                        <p class="contacts--p">{{ 'contacts-info'|trans }}:  <a href="mailto:help@zaymu-24.kz">help@zaymu-24.kz</a></p>
+                        <div class="row row--center">
+                            <div class="contacts--email"></div>
+                            <div class="contacts--email-text">help@zaymu-24.kz</div>
+
+                        </div>
+                        <div class="calculator contacts--calculator">
+                        {{ include("include/calculator.html.twig") }}
+                        </div>
+                    </div>
+
+
+                        <div class="contacts--bg"></div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="{{asset('js/calc.js')}}"></script>
+{% endblock %}

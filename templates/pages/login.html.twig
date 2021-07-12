@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Вход{% endblock %}
+
+{% block body %}
+    <main>
+        <section class="credit--login">
+            <div class="container">
+
+                <div class="header--block">
+
+                    <h2 class="header--h2 wow slideInLeft">{{ 'Login_title'|trans }}</span></h2>
+                </div>
+                <div class="row row--space-between">
+                    <div class="credit--form">
+                        <form id="form">
+                            <div class="form--block-error" id="formError">
+
+                            </div>
+
+
+                                <div class="form--item">
+                                <input type="email" class="form--field" id="email" placeholder="email">
+                                </div>
+                                <div class="form--item">
+                                <input type="password" class="form--field" id="password" placeholder="{{ 'pass'|trans }}">
+                                </div>
+
+                            <div class="row  form--row">
+                                <button type="submit" class="btn form--add-credit">{{ 'Login'|trans }}</button>
+                            </div>
+                            <div class="row  form--row">
+
+{#                                <label class="form--label"><a href="/reset-password">ЗАБЫЛИ ПАРОЛЬ?</a> </label>#}
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="{{asset('js/authorization.js')}}"></script>
+{% endblock %}

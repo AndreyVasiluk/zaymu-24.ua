@@ -1,0 +1,295 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Кредит на карту онлайн - взять срочно, без отказа в Zaymu-24{% endblock %}
+{% block description %}Взять кредит не выходя из дома ✓ Минимум документов ✓ Решение за несколько минут от Zaymu-24{% endblock %}
+
+{% block body %}
+    <section id="home-top" class="section home--top">
+        <div class="container">
+            <div class=" home--calculator">
+                <h1>{{ 'home-h1'|trans }}</h1>
+                <div class="calculator">
+                        {{ include("include/calculator.html.twig") }}
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="section home--advantages">
+        <div class="container">
+            <div class="header--block">
+
+                <h2 class="header--h2 wow slideInLeft">{{ 'home--advantages-title'|trans }}</h2>
+            </div>
+            <div class="row row--space-between home--row-advantages">
+                <div class="home--advantages-col home--advantages-col__1 wow slideInRight">
+                    <div class="home--advantages-ico home--advantages-ico__1"></div>
+                    <div class="home--advantages-text">{{ 'home--advantages-item-1'|trans }}</div>
+
+                </div>
+                <div class="home--advantages-col home--advantages-col__2 wow slideInUp">
+                    <div class="home--advantages-ico home--advantages-ico__2"></div>
+                    <div class="home--advantages-text">{{ 'home--advantages-item-2'|trans }}</div>
+
+                </div>
+                <div class="home--advantages-col home--advantages-col__3 wow slideInLeft">
+                    <div class="home--advantages-ico home--advantages-ico__3"></div>
+                    <div class="home--advantages-text">{{ 'home--advantages-item-3'|trans }}</div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section home--conditions">
+        <div class="container">
+
+            <div class="header--block">
+
+                <h2 class="header--h2 wow slideInLeft">{{ 'home--conditions-title'|trans }}</h2>
+            </div>
+            <div class="row row--space-between home--row-conditions">
+                <div class="home--col-conditions home--col-conditions__1">
+                    <div class="row">
+                        <div class="home--conditions-item home--conditions-item__1 wow slideInLef">
+                            <h4 class="home--conditions-header">{{ 'home--conditions-item_1'|trans }}</h4>
+                        </div>
+                        <div class="home--conditions-item home--conditions-item__2 wow slideInRight">
+                            <h4 class="home--conditions-header">{{ 'home--conditions-item_2'|trans }}</h4>
+
+                        </div>
+                        <div class="home--conditions-item home--conditions-item__3 wow slideInLeft">
+                            <h4 class="home--conditions-header">{{ 'home--conditions-item_3'|trans }}</h4>
+                        </div>
+                        <div class="home--conditions-item home--conditions-item__4 wow slideInRight">
+                            <h4 class="home--conditions-header">{{ 'home--conditions-item_4'|trans }}</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="home--col-conditions home--col-conditions__2">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="home-work" class="section home--work">
+        <div class="container">
+            <div class="header--block">
+
+                <h2 class="header--h2 wow slideInLeft">{{ 'home--work-title'|trans }}</h2>
+            </div>
+            <div class="row row--space-between home--row-work">
+
+
+                    <div class="home--work-item home--work-item__1 wow slideInRight">
+                        <div class="home--work-ico home--work-ico__1"></div>
+                        <div class="home--work-text">{{ 'home--work-title_1'|trans }}</div>
+                        <div class="home--work-content">{{ 'home--work-content_1'|trans }}</div>
+                    </div>
+                    <div class="home--work-item home--work-item__2 wow slideInLeft">
+                        <div class="home--work-ico home--work-ico__2"></div>
+                        <div class="home--work-text">{{ 'home--work-title_2'|trans }}</div>
+                        <div class="home--work-content">{{ 'home--work-content_2'|trans }}</div>
+                    </div>
+                    <div class="home--work-item home--work-item__3 wow slideInRight">
+                        <div class="home--work-ico home--work-ico__3"></div>
+                        <div class="home--work-text">{{ 'home--work-title_3'|trans }}</div>
+                        <div class="home--work-content">{{ 'home--work-content_3'|trans }}</div>
+                    </div>
+
+
+
+            </div>
+            <div class="row row--space-between home--row-work">
+                <a class="btn home--work-btn" href="/{{ app.request.locale }}/credit-form">{{ 'RequestOnline'|trans }}</a>
+            </div>
+
+        </div>
+    </section>
+    <section id="home-reviews" class="section home--slider home--reviews">
+        <div class="container">
+
+            <div class="header--block">
+
+                <h2 class="header--h2 wow slideInLeft">{{ 'home--reviews-title'|trans }}</h2>
+            </div>
+
+
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content">
+                                            <div class="slider--ico slider--ico__1"></div>
+                                            <h4 class="slider__content_author">Инна Иванова</h4>
+                                            <div class="slider__content_text">
+                                                Воспользовался услугой онлайн кредитования. Заявку рассмотрели довольно быстро. С документов потребовался только паспорт и код. Брал малую суму по довольно неплохой кредитной ставке. Если нужны будут срочно деньги, уже знаю куда обращаться.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content">
+                                            <div class="slider--ico slider--ico__2"></div>
+                                            <h4 class="slider__content_author">Анна Петрова</h4>
+                                            <div class="slider__content_text">
+                                                Без проблем сделали пролонгацию кредита, так как не рассчитал немного с финансами.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content">
+                                            <div class="slider--ico slider--ico__3"></div>
+                                            <h4 class="slider__content_author">Максив Васильев</h4>
+                                            <div class="slider__content_text">
+                                                Отличный сервис как альтернатива банку. Нет волокиты с кучей справок и документов. Могу рекомендовать.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content">
+                                            <div class="slider--ico slider--ico__1"></div>
+                                            <h4 class="slider__content_author">Инна Иванова</h4>
+                                            <div class="slider__content_text">
+                                                Воспользовался услугой онлайн кредитования. Заявку рассмотрели довольно быстро. С документов потребовался только паспорт и код. Брал малую суму по довольно неплохой кредитной ставке. Если нужны будут срочно деньги, уже знаю куда обращаться.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content">
+                                            <div class="slider--ico slider--ico__2"></div>
+                                            <h4 class="slider__content_author">Анна Петрова</h4>
+                                            <div class="slider__content_text">
+                                                Без проблем сделали пролонгацию кредита, так как не рассчитал немного с финансами.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content">
+                                            <div class="slider--ico slider--ico__3"></div>
+                                            <h4 class="slider__content_author">Максив Васильев</h4>
+                                            <div class="slider__content_text">
+                                                Отличный сервис как альтернатива банку. Нет волокиты с кучей справок и документов. Могу рекомендовать.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#" class="slider__control slider__control__left" data-slide="prev"></a>
+                        <a href="#" class="slider__control slider__control__right" data-slide="next"></a>
+
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section id="home-about" class="section home--about">
+        <div class="container">
+
+            <div class="header--block">
+
+                <h2 class="header--h2 wow slideInRight text--center">Микрокредиты   <span>онлайн</span></h2>
+            </div>
+            <div class="row row--space-between">
+                <div class="home--about-col wow slideInLeft">
+                    <h3>Деньги до зарплаты – прозрачные микрокредиты онлайн на карту</h3>
+                    <p>Срочно нужны деньги до зарплаты? У знакомых одалживать стыдно, а с банками связываться нет ни малейшего желания? Отличной альтернативой является онлайн микрокредит от финансовых организаций – партнеров сервиса «Zaymu-24.kz», готовых предложить на выгодных условиях займ на любые нужды: подарок родственнику, горящий тур, о котором давно мечтали, покупка бытовой техники по скидке, одежды, платные курсы и другие потребности.</p>
+<p>Сервис «Zaymu-24» является посредником между заемщиком и финансовой организацией МФО. Мы подберем для вас кредит на выгодных условиях, так как сотрудничаем со многими проверенными финансовыми организациями. Многие МФО, в целях привлечения клиентов, предлагают различные программы лояльности и скидки на кредитный продукт. Это может быть сниженная процентная ставка на первый кредит онлайн или специальные льготные ссуды для постоянных клиентов. Вы можете самостоятельно выбрать финансовую компанию из числа тех, кто готов дать ссуду, предварительно ознакомившись с условиями кредитования.</p>
+<p>Микрокредиты онлайн – это уникальная возможность оперативно получить на свою карту согласованную сумму на небольшой срок. Процентная ставка начисляется за каждый день пользования кредитом, который можно закрыть ранее согласованного срока, тем самым сэкономить на оплате процентов. Процентная ставка зависит от политики финансовой компании, занимающейся микрокредитованием. Размер комиссии обычно составляет в пределах 0,01 - 1,9% в день, но при этом, для новых клиентов может быть первый кредит под 0%. На нашем онлайн сервисе вы найдете предложения от разных финансовых организаций. Ознакомьтесь со всеми и выберите для себя самый подходящий вариант микрокредитования.</p>
+<p>Преимущества нашего сервиса в полной мере уже успели оценить жители Казахстана. Быстрое оформление и лояльные условия кредитования позволяют оперативно решить финансовые вопросы. При том, что услуга абсолютна бесплатная. Ссуду через сервис «Zaymu-24.kz» получить существенно проще, чем традиционный банковский кредит. Вам не понадобится справка с места работы, справка о доходах заемщика, искать поручителя, вносить залог, платить страховку. А ведь на эти бюрократические проволочки уходит много времени и сил. И при этом не факт, что банк выделит вам кредит вообще или будет согласована небольшая сумма, так как такие финансовые организации предпочитают иметь дело с большими суммами кредитных денег на долгий срок. Краткосрочные кредиты не интересны банкам априори.</p>
+
+
+
+
+                </div>
+                <div class="home--about-col wow slideInRight">
+
+                    <h3>Как это работает?</h3>
+                    <p>Микрозаймы выдаются на небольшие денежные суммы с ежедневным начислением процентов за использование кредитных средств. Срок погашения варьируется: от 7 до 30 календарных дней. С онлайн сервисом «Zaymu-24.kz», вы в течение 15-20 минут можете получить деньги на любую карту казахского банка. Услугой «деньги до зарплаты» можно воспользоваться в любое время дня и ночи, так как сервис работает в режиме 24/7. Для оформления ссуды и подачи заявки достаточно иметь под рукой смартфон и доступ к сети Internet. Услугой кредитования онлайн могут воспользоваться все лица, достигшие совершеннолетия, а также пенсионеры и официально нетрудоустроенные.</p>
+                    <h3>Преимущества сотрудничества с «Zaymu-24.kz»</h3>
+                    <ul>
+                        <li> - Быстрое и простое оформление заявки на кредит.</li>
+                        <li> - Заявка на получение кредита обрабатывается системой автоматически.</li>
+                        <li> - Мгновенное зачисление денежных средств на карту любого банка.</li>
+                        <li> - Кредиты доступны для широкого круга лиц без возрастных ограничений.</li>
+                        <li> - Высокая вероятность получения микрокредита для людей с плохой кредитной историей.</li>
+                        <li> - Минимум бюрократии (вам нужен всего паспорт и идентификационный код).</li>
+                        <li> - Возможность технической поддержки в режиме 24/7 без праздников и выходных.</li>
+                        <li> - Прозрачные условия без скрытых комиссий и обязательных страховочных платежей.</li>
+                        <li> - Пролонгация кредита, если нет возможности вернуть деньги в заявленный срок.</li>
+                        <li> - Можно воспользоваться программами лояльности для новых и постоянных клиентов сервиса.</li>
+                        <li> - Высокая вероятность получения микрозайма – успешно одобряем до 90% заявок.</li>
+
+                    </ul>
+
+                    <h3>  Как взять деньги до зарплаты?</h3>
+                    <ul>
+                        <li>                    1.	Заполните форму заявки, указав сумму кредита и срок погашения. Калькулятор автоматически рассчитает  сумму на момент погашения с учетом начисленных процентов.
+
+                        </li>
+                        <li>                     2.	Дождаться решения по кредиту – уведомление приходит на телефона в виде СМС и на электронную почту, которая указана при оформлении заявки.
+
+                        </li>
+                        <li> 3.	Ознакомиться и подписать договор на получение онлайн кредита, где указаны обязательства каждой стороны.
+                        </li>
+                        <li>                      4.	Дождаться зачисления кредитных средств на банковскую карту - обычно процесс занимает 15-20 минут.
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <div class="row row--center" style="    justify-content: center;">
+                <div class="home--about-col wow slideInRight">
+                    <p ><b>Нужно знать!</b> Регистрация на сервисе «Zaymu-24.kz» не гарантирует выдачу кредита финансовой компанией-партнером. </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    {% block javascripts %}
+        <script type="text/javascript" src="{{asset('js/slider.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/calc.js')}}"></script>
+    {% endblock %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                //loop: true,
+                //autoplay: true,
+                //interval: 5000,
+                refresh: true,
+            });
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+<div class="calculator--box wow slideInUp">
+    <div class="calculator--box-info">
+        0%<br>
+        <span>{{ 'calculator-info1'|trans }}<br>{{ 'calculator-info2'|trans }}</span>
+    </div>
+    <div class="calculator--row row">
+        <div class="calculator--ico calculator--ico__1"></div>
+        <div class="calculator--fields ">
+            <label class="calculator--label">{{ 'calculator-sum-get'|trans }}</label>
+            <input class="calculator--input" type="number" min="1" max="100000" value="50000" id="inputSumRange" >
+        </div>
+    </div>
+    <div class="calculator--row row">
+        <div class="calculator--ico calculator--ico__2"></div>
+        <div class="calculator--fields">
+            <label class="calculator--label">{{ 'calculator-term'|trans }}</label>
+            <input class="calculator--input" type="number"  value="30"  min="1" max="90" id="inputTermRange" >
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="calculator--field">
+        <label class="calculator--label row"><span class="calculator--signature">{{ 'calculator-repayment-date'|trans }}:</span> <span class="calculator--blue calculator--span" id="datereturn">07.08.2021</span></label>
+    </div>
+    <div class="calculator--field">
+        <label class="calculator--label "><span class="calculator--signature">{{ 'calculator-repayment-amount'|trans }}:</span>  <span class="calculator--blue calculator--span" id="sumReturn2">1000₸</span> <span class="calculator--red calculator--span" id="sumReturn">1000₸</span></label>
+    </div>
+    <a class="btn calculator--btn" href="/{{ app.request.locale }}/credit-form/">{{ 'calculator-submit'|trans }}</a>
+    <br>
+    <label class="calculator--label row">{{ 'calculator-rate'|trans }}</label>
+</div>

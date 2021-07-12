@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Заявка онлайн{% endblock %}
+
+{% block body %}
+    <main>
+        <section class="offers">
+            <div class="container">
+                <div class="header--block">
+
+                    <h2 class="header--h2 wow slideInLeft">Наши <span>партнеры</span></h2>
+                </div>
+
+                <div id="offers" class="offers--items">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="{{asset('js/credits-banks.js')}}"></script>
+{% endblock %}

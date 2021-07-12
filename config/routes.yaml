@@ -1,0 +1,8 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+main:
+  path:       /{_locale}
+  controller: App\Controller\MainController::index
+  requirements:
+    _locale: ua|ru

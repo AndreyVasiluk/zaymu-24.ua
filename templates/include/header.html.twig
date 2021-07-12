@@ -1,0 +1,64 @@
+<header class="header" id="header">
+    <div class="container">
+        <div class="row row--space-between row--center">
+            <a class="header--logo" href="/{{ app.request.locale }}/"></a>
+            <div class="header--profile__none" id="profileMob">
+
+            </div>
+            <nav class="nav" id="nav">
+                <span id="trigger" class="trigger">
+
+                </span>
+                <ul id="menu" class="header--menu">
+                    <li class="header--item">
+                        <a class="header--link " href="/{{ app.request.locale }}/">{{ 'HOME'|trans }}</a>
+                    </li>
+                    <li class="header--item" id="creditForm">
+                        <a class="header--link" href="/{{ app.request.locale }}/credit-form">{{ 'RequestOnline'|trans }}</a>
+                    </li>
+                    <li class="header--item">
+                        <a class="header--link" href="/{{ app.request.locale }}/contacts">{{ 'Contacts'|trans }}</a>
+                    </li>
+
+                    <li class="header--item" id="loginBtn2">
+                        <a class=" header--btn" href="/{{ app.request.locale }}/login">{{ 'Login'|trans }}</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav__login" >
+
+
+                </span>
+                <ul id="menu__login" class="header--menu">
+                    <li class="header--item header--profile__show" id="profile">
+
+
+                    </li>
+                    <li class="header--item" id="loginBtn">
+                        <a class=" header--btn" href="/{{ app.request.locale }}/login">{{ 'Login'|trans }}</a>
+                    </li>
+                    <li class="header--item" >
+                        <div class="header--lang">
+                            {% if app.request.locale == 'ua' %}
+                                UA
+                                <div class="header--lang-dropdown">
+                                    <a class="header--lang-dropdown-item" onclick="window.location = document.location.href.replace('/ua', '/ru'); return false;" href="/ru/">RU</a>
+                                </div>
+                            {% else %}
+                                RU
+                                <div class="header--lang-dropdown">
+                                    <a class="header--lang-dropdown-item" onclick="window.location =  document.location.href.replace('/ru', '/ua'); return false;" href="/ua/">UA</a>
+                                </div>
+                            {% endif %}
+
+
+
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+</header>

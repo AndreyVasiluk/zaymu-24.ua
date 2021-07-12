@@ -1,0 +1,26 @@
+.footer {
+  background-image: -moz-linear-gradient(0deg, #659bff 0%, #677bff 46%, #6966ff 100%);
+  background-image: -webkit-linear-gradient(0deg, #659bff 0%, #677bff 46%, #6966ff 100%);
+  background-image: -ms-linear-gradient(0deg, #659bff 0%, #677bff 46%, #6966ff 100%);
+  padding: 50px 0; }
+  .footer--logo {
+    display: block;
+    background-image: url("../../img/logo.png");
+    background-size: 100% auto;
+    width: 221px;
+    height: 87px; }
+  .footer--menu-list {
+    display: flex; }
+  .footer--link {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0 25px;
+    font-weight: bold; }
+    .footer--link:hover {
+      color: #86BBFF; }
+  .footer--text {
+    font-size: 1.6em;
+    color: #fff;
+    line-height: 1.2; }
+
+/*# sourceMappingURL=footer.css.map */

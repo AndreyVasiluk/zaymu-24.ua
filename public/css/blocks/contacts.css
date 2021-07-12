@@ -1,0 +1,27 @@
+.contacts--box {
+  background-image: url("../img/contact-bg.png");
+  background-position: bottom;
+  min-height: 550px;
+  width: 600px;
+  background-repeat: no-repeat; }
+.contacts--calculator {
+  margin-top: 0; }
+.contacts--email {
+  background-image: url("../img/email-icon.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-position: center; }
+.contacts--email-text {
+  margin-left: 15px;
+  color: #272727;
+  line-height: 1.2;
+  font-size: 1.6em; }
+.contacts--p {
+  color: #272727;
+  line-height: 1.2;
+  font-size: 1.5em; }
+  .contacts--p a {
+    color: #659bff; }
+
+/*# sourceMappingURL=contacts.css.map */
