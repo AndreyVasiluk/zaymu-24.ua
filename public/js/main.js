@@ -131,14 +131,7 @@ if(getCookie('user')!== undefined){
 
 }
 
-wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    live: true
-})
-wow.init();
+
 document.getElementById("trigger").onclick = function() {open()};
 
 function open() {
