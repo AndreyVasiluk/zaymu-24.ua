@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Спасибо за регистрацию!{% endblock %}
-{% block description %}Спасибо за регистрацию!{% endblock %}
+{% block title %}{{ 'succ-title'|trans }}{% endblock %}
+{% block description %}{{ 'succ-title'|trans }}{% endblock %}
 
 {% block body %}
     <main>
@@ -11,12 +11,13 @@
             <div class="container">
                 <div class="header--block">
 
-                    <h2 class="header--h2 wow slideInLeft">Спасибо за регистрацию!</h2>
+                    <h1 >{{ 'succ-title'|trans }}</h1>
+                    <p >{{ 'succ-text'|trans }}</p>
                 </div>
             </div>
         </section>
     </main>
 {% endblock %}
 {% block javascripts %}
-    <script type="text/javascript" src="{{asset('js/calc.js')}}"></script>
+
 {% endblock %}

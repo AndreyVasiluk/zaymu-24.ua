@@ -1,8 +1,8 @@
 const offers = document.querySelector('#offers');
 
-if(getCookie('user')== undefined){
-    location.href = '/'+locale+'/login'
-}
+// if(getCookie('user')== undefined){
+//     location.href = '/'+locale+'/login'
+// }
 let xhr = new XMLHttpRequest()
 xhr.open(
     'GET',
