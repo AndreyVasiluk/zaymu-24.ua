@@ -222,6 +222,16 @@ main {
   section .container {
     width: 90%;
     padding: 0 5%;
+    overflow: hidden; }
+
+  footer .container {
+    width: 90%;
+    padding: 0 5%;
+    overflow: hidden; }
+
+  header .container {
+    width: 90%;
+    padding: 0 5%;
     overflow: hidden; } }
 @media (max-width: 870px) {
   h1 {
