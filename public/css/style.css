@@ -219,9 +219,9 @@ main {
     background-image: -ms-linear-gradient(0deg, black 0%, #272727 46%, black 100%); }
 
 @media screen and (max-width: 1320px) {
-  .container {
+  section .container {
     width: 90%;
-    margin: 0 5%;
+    padding: 0 5%;
     overflow: hidden; } }
 @media (max-width: 870px) {
   h1 {
@@ -668,6 +668,40 @@ ul {
 .home--calculator {
   width: 645px;
   margin-top: 132px; }
+.home--accordion {
+  cursor: pointer;
+  padding: 15px 50px 15px 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: white;
+  box-shadow: 0px 10px 17.25px 5.75px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin: 12.5px 0;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #272727;
+  position: relative; }
+  .home--accordion:before {
+    content: url("../img/acordion-close.png");
+    position: absolute;
+    right: 30px; }
+  .home--accordion.active {
+    background-image: -moz-linear-gradient(0deg, #a9e2b3 0%, #56d29d 48%, #68c7c6 100%);
+    background-image: -webkit-linear-gradient(0deg, #a9e2b3 0%, #56d29d 48%, #68c7c6 100%);
+    background-image: -ms-linear-gradient(0deg, #a9e2b3 0%, #56d29d 48%, #68c7c6 100%); }
+    .home--accordion.active:before {
+      content: url("../img/acordion-open.png"); }
+.home--panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-size: 1.6em;
+  color: #aaaaaa;
+  line-height: 1.4; }
 .home--partner .container {
   padding-bottom: 50px; }
 .home--partner-col {
@@ -927,6 +961,14 @@ ul {
   .home--partner-col {
     width: 48%;
     height: 74px; }
+  .home--accordion {
+    font-size: 1.6em; }
+    .home--accordion:before {
+      content: url("../img/acordion-close.png");
+      position: absolute;
+      right: 15px; }
+  .home--panel {
+    font-size: 1.4em; }
   .home--advantages-col {
     padding: 30px;
     width: 100%;
@@ -974,6 +1016,14 @@ ul {
     width: 100%; }
   .home--work-btn {
     width: 100%; }
+  .home--accordion {
+    font-size: 1.2em; }
+    .home--accordion:before {
+      content: url("../img/acordion-close.png");
+      position: absolute;
+      right: 15px; }
+  .home--panel {
+    font-size: 1.2em; }
   .home--conditions-text {
     display: none; }
   .home--advantages-col {

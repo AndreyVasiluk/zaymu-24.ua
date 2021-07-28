@@ -21,6 +21,51 @@
     margin-top: 132px
   }
 
+  &--accordion {
+    cursor: pointer;
+    padding: 15px 50px 15px 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 17.25px 5.75px rgba(0, 0, 0, 0.1);
+
+    border-radius: 25px;
+    margin: 12.5px 0;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: rgb(39, 39, 39);
+    position: relative;
+    &:before{
+      content: url("../img/acordion-close.png");
+      position: absolute;
+      right: 30px;
+    }
+    &.active{
+      background-image: -moz-linear-gradient( 0deg, rgb(169,226,179) 0%, rgb(86,210,157) 48%, rgb(104,199,198) 100%);
+      background-image: -webkit-linear-gradient( 0deg, rgb(169,226,179) 0%, rgb(86,210,157) 48%, rgb(104,199,198) 100%);
+      background-image: -ms-linear-gradient( 0deg, rgb(169,226,179) 0%, rgb(86,210,157) 48%, rgb(104,199,198) 100%);
+      &:before{
+        content: url("../img/acordion-open.png");
+
+      }
+    }
+
+  }
+
+
+  &--panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 1.6em;
+    color: #aaaaaa;
+    line-height: 1.4;
+
+  }
 
 
 
@@ -444,7 +489,17 @@
       width: 48%;
       height: 74px;
     }
-
+    &--accordion {
+      font-size: 1.6em;
+      &:before{
+        content: url("../img/acordion-close.png");
+        position: absolute;
+        right: 15px;
+      }
+    }
+    &--panel {
+      font-size: 1.4em;
+    }
     &--advantages-col{
       padding: 30px;
       width: 100%;
@@ -550,7 +605,17 @@
     &--work-btn{
       width: 100%;
     }
-
+    &--accordion {
+      font-size: 1.2em;
+      &:before{
+        content: url("../img/acordion-close.png");
+        position: absolute;
+        right: 15px;
+      }
+    }
+    &--panel {
+      font-size: 1.2em;
+    }
 
     &--conditions-text{
       display: none;
