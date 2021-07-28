@@ -193,7 +193,7 @@ function addProcess(){
                      if(json.status===200){
                          form.reset();
                          document.cookie = 'user= {"email": "'+json.email+'", "name": "'+json.name+'", "tel": "'+json.tel+'"}; max-age=1800';
-                         location.href = '/'+locale+'/credits-banks'
+                         location.href = '/'+locale+'/successful-registration'
                      }else{
                          if(locale=='ua'){
                              formError.innerHTML = "Email вже існує";

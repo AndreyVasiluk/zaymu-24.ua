@@ -121,5 +121,14 @@ class PagesController extends AbstractController
 
         ]);
     }
+    /**
+     * @Route("/{_locale}/successful-registration", name="successful-registration")
+     */
+    public function successfulRegistration(): Response
+    {
+        return $this->render('pages/successful-registration.html.twig', [
+
+        ]);
+    }
 
 }
