@@ -739,7 +739,7 @@ ul {
   width: 50%;
   height: 100%; }
   .home--col-conditions__2 {
-    background-image: url("../img/condition_bg.png");
+    background-image: url("../img/condition_bg.jpg");
     background-position: left bottom;
     background-size: auto 80%;
     background-repeat: no-repeat;
@@ -1024,7 +1024,7 @@ ul {
   .home--top {
     min-height: 865px;
     background-size: 100% auto;
-    background-image: url("../img/bg-mob.png");
+    background-image: url("../img/bg-mob.jpg");
     background-position: bottom center; }
   .home--getting-text {
     font-size: 1.45em; }
@@ -1652,13 +1652,13 @@ ul {
   border-radius: 30px;
   color: #272727; }
   .form--field::-webkit-input-placeholder {
-    color: #d7d7d8; }
+    color: #272727; }
   .form--field::-moz-placeholder {
-    color: #d7d7d8; }
+    color: #272727; }
   .form--field:-moz-placeholder {
-    color: #d7d7d8; }
+    color: #272727; }
   .form--field:-ms-input-placeholder {
-    color: #d7d7d8; }
+    color: #272727; }
   .form--field.error {
     border: 2px solid #f2aeae; }
 .form--label {

@@ -37,10 +37,10 @@
     border: 1px solid #ede1e1;
     border-radius: 30px;
     color: #272727;
-    &::-webkit-input-placeholder {color:#d7d7d8;}
-    &::-moz-placeholder          {color:#d7d7d8;}
-    &:-moz-placeholder           {color:#d7d7d8;}
-    &:-ms-input-placeholder      {color:#d7d7d8;}
+    &::-webkit-input-placeholder {color:#272727;}
+    &::-moz-placeholder          {color:#272727;}
+    &:-moz-placeholder           {color:#272727;}
+    &:-ms-input-placeholder      {color:#272727;}
     &.error{
       border: 2px solid #f2aeae;
     }
