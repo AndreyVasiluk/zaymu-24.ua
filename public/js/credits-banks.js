@@ -20,9 +20,26 @@ xhr.onreadystatechange = function() {
         res = JSON.parse(xhr.responseText)
 
         for (var prop in res) {
-
+            let top = ''
+            let offersTop = ''
+            let rec=''
+            if(res[prop].topSignature=='Мы рекомендуем!'){
+                rec='offers--rec'
+                res[prop].topValue=''
+            }
+            if(res[prop].top==true){
+                offersTop = 'offers--top-box offers--top-box__'+res[prop].topColor;
+                top = '<div class="offers--top offers--top__'+res[prop].topColor+'">\n' +
+                    '                    <div class="offers--top-value '+rec+'">\n' +
+                    '                        '+res[prop].topValue+'\n' +
+                    '                    </div>\n' +
+                    '                    <div class="offers--top-signature">\n' +
+                    '                        '+res[prop].topSignature+'\n' +
+                    '                    </div>\n' +
+                    '                </div>'
+            }
             if(locale=='ua'){
-                content+='<div class="offers--item" >' +
+                content+='<div class="offers--item '+offersTop+'" >' +top+
                     '                    <a class="offers--logo" target="_blank" href="'+res[prop].link+'">\n' +
                     '                        <img src="'+res[prop].img+'" class="offers--img" alt="'+res[prop].name+'">\n' +
                     '                    </a>\n' +
@@ -33,7 +50,7 @@ xhr.onreadystatechange = function() {
                     '                    <a href="'+res[prop].link+'" target="_blank" class="btn offers--btn">ПОДАТИ ЗАЯВКУ</a>\n' +
                     '                </div>';
             }else{
-                content+='<div class="offers--item" >\n' +
+                content+='<div class="offers--item '+offersTop+'" >\n' +top+
                     '                    <a class="offers--logo" href="'+res[prop].link+'" target="_blank">\n' +
                     '                        <img src="'+res[prop].img+'" class="offers--img" alt="'+res[prop].name+'">\n' +
                     '                    </a>\n' +
