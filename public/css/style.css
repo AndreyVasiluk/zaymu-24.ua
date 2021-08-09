@@ -1429,13 +1429,25 @@ ul {
   position: relative;
   overflow: hidden; }
   .offers--top-box__red {
-    border-color: #ff6767; }
+    border-color: #ff6150; }
   .offers--top-box__blue {
     border-color: #00a5ff; }
   .offers--top-box__violet {
-    border-color: #6849ea; }
+    border-color: #5500ff; }
   .offers--top-box__yellow {
     border-color: #ffcd38; }
+  .offers--top-box__burgundy {
+    border-color: #800080; }
+  .offers--top-box__orange {
+    border-color: #ffa500; }
+  .offers--top-box__pink {
+    border-color: #ffc0cb; }
+  .offers--top-box__green {
+    border-color: #008000; }
+  .offers--top-box__navy_blue {
+    border-color: #072448; }
+  .offers--top-box__light_green {
+    border-color: #54d2d2; }
 .offers--top {
   position: absolute;
   text-align: center;
@@ -1463,11 +1475,24 @@ ul {
   .offers--top__blue {
     background: #00a5ff; }
   .offers--top__violet {
-    background: #6849ea; }
+    background: #5500ff; }
   .offers--top__yellow {
     background: #ffcd38; }
+  .offers--top__burgundy {
+    background: #800080; }
+  .offers--top__orange {
+    background: #ffa500; }
+  .offers--top__pink {
+    background: #ffc0cb; }
+  .offers--top__green {
+    background: #008000; }
+  .offers--top__navy_blue {
+    background: #072448; }
+  .offers--top__light_green {
+    background: #54d2d2; }
 .offers--top-value {
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  height: 25px; }
 .offers--top-signature {
   font-size: 1.0em; }
 .offers--rec {

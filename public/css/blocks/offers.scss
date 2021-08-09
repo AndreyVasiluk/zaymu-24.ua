@@ -85,17 +85,36 @@
     overflow: hidden;
 
     &__red{
-      border-color: #ff6767;
+      border-color: #ff6150;
     }
     &__blue{
       border-color: #00a5ff;
     }
     &__violet{
-      border-color: #6849ea;
+      border-color: #5500ff;
     }
     &__yellow{
       border-color: #ffcd38;
+    }
+    &__burgundy{
+      border-color: #800080;
 
+    }
+    &__orange{
+      border-color: #ffa500;
+    }
+    &__pink{
+      border-color: #ffc0cb;
+    }
+    &__green{
+      border-color: #008000;
+    }
+    &__navy_blue{
+      border-color: #072448;
+    }
+
+    &__light_green{
+      border-color: #54d2d2;
     }
   }
   &--top{
@@ -123,16 +142,34 @@
       background: #00a5ff;
     }
     &__violet{
-      background: #6849ea;
+      background: #5500ff;
     }
     &__yellow{
       background: #ffcd38;
-
+    }
+    &__burgundy{
+      background: #800080;
+    }
+    &__orange{
+      background: #ffa500;
+    }
+    &__pink{
+      background: #ffc0cb;
+    }
+    &__green{
+      background: #008000;
+    }
+    &__navy_blue{
+      background: #072448;
+    }
+    &__light_green{
+      background: #54d2d2;
     }
 
   }
   &--top-value{
     font-size: 1.7em;
+    height: 25px;
   }
   &--top-signature{
     font-size: 1.0em;

@@ -27,6 +27,9 @@ xhr.onreadystatechange = function() {
                 rec='offers--rec'
                 res[prop].topValue=''
             }
+            if(res[prop].topValueSwich==true){
+                res[prop].topValue=''
+            }
             if(res[prop].top==true){
                 offersTop = 'offers--top-box offers--top-box__'+res[prop].topColor;
                 top = '<div class="offers--top offers--top__'+res[prop].topColor+'">\n' +
