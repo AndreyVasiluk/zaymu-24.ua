@@ -1,5 +1,5 @@
 const offers = document.querySelector('#offers');
-
+let translate = [['БЕЗ ФОТО', 'БЕЗ ФОТО'],['БЕЗ ЗВОНКОВ', 'БЕЗ ДЗВІНКІВ'],['БЕЗ ФОТО И ЗВОНКОВ', 'БЕЗ ДЗВІНКІВ І ФОТО']]
 // if(getCookie('user')== undefined){
 //     location.href = '/'+locale+'/login'
 // }
@@ -42,6 +42,12 @@ xhr.onreadystatechange = function() {
                     '                </div>'
             }
             if(locale=='ua'){
+                translate.forEach(function(item, i) {
+                    if(item[0]==res[prop].endorsements){
+                        res[prop].endorsements=item[1]
+                    }
+
+                });
                 content+='<div class="offers--item '+offersTop+'" >' +top+
                     '                    <a class="offers--logo" target="_blank" href="'+res[prop].link+'">\n' +
                     '                        <img src="'+res[prop].img+'" class="offers--img" alt="'+res[prop].name+'">\n' +
