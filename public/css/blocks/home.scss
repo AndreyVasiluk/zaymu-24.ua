@@ -589,7 +589,7 @@
 @media (max-width:464px){
   .home {
     &--top{
-      min-height: 865px;
+      min-height: 800px;
       background-size: 100% auto;
       background-image: url("../img/bg-mob.jpg");
       background-position: bottom center;
@@ -636,7 +636,7 @@
       font-size: 1.6em;
     }
     &--conditions-item{
-      height: 430px;
+      height: 397px;
       width: 100%;
       background-size: 80% auto;
       background-position: top center;
@@ -658,8 +658,26 @@
 
   }
 }
+@media (max-width:410px){
+  .home {
+    &--conditions-item{
+      height: 350px;
+
+    }
+    &--col-conditions{
+
+      &__2{
+        min-height: 300px;
+      }
+    }
+  }
+}
 @media (max-width:371px){
   .home {
+    &--top{
+      min-height: 763px;
+
+    }
 
     &--getting{
       min-height: 954px;
@@ -683,5 +701,20 @@
 
     }
 
+  }
+}
+
+@media (max-width:340px){
+  .home {
+    &--conditions-item{
+      height: 365px;
+
+    }
+    &--col-conditions{
+
+      &__2{
+        min-height: 260px;
+      }
+    }
   }
 }

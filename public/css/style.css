@@ -1023,7 +1023,7 @@ ul {
     min-height: 330px; } }
 @media (max-width: 464px) {
   .home--top {
-    min-height: 865px;
+    min-height: 800px;
     background-size: 100% auto;
     background-image: url("../img/bg-mob.jpg");
     background-position: bottom center; }
@@ -1054,7 +1054,7 @@ ul {
   .home--advantages-text {
     font-size: 1.6em; }
   .home--conditions-item {
-    height: 430px;
+    height: 397px;
     width: 100%;
     background-size: 80% auto;
     background-position: top center; }
@@ -1066,7 +1066,14 @@ ul {
     width: 100%;
     box-shadow: none;
     padding: 15px; } }
+@media (max-width: 410px) {
+  .home--conditions-item {
+    height: 350px; }
+  .home--col-conditions__2 {
+    min-height: 300px; } }
 @media (max-width: 371px) {
+  .home--top {
+    min-height: 763px; }
   .home--getting {
     min-height: 954px;
     background-repeat: no-repeat;
@@ -1079,6 +1086,11 @@ ul {
     height: 400px;
     width: 100%;
     background-size: 100% auto; } }
+@media (max-width: 340px) {
+  .home--conditions-item {
+    height: 365px; }
+  .home--col-conditions__2 {
+    min-height: 260px; } }
 .calculator {
   width: 436px; }
   .calculator--box {
