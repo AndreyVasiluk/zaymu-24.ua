@@ -28,7 +28,10 @@
 
                             </div>
 
-
+                            <div class="form--item">
+                                <input type="text"  minlength="2"  id="name" required name="name"  class="form--field" placeholder="{{ 'name'|trans }}">
+                                <span class="form--error" id="nameError"></span>
+                            </div>
                                 <div class="form--item">
                                     <input type="email" id="email"   name="email" required class="form--field" placeholder="email">
                                     <span class="form--error" id="emailError"></span>
@@ -40,10 +43,7 @@
                                 </div>
 
 
-                                <div class="form--item">
-                                    <input type="text"  minlength="2"  id="name" required name="name"  class="form--field" placeholder="{{ 'name'|trans }}">
-                                    <span class="form--error" id="nameError"></span>
-                                </div>
+
                                 <div class="form--item">
                                     <input type="password" id="pass"  minlength="6"  maxlength="32" name="password"  required  class="form--field" placeholder="{{ 'pass'|trans }}">
                                     <span class="form--error" id="passError"></span>

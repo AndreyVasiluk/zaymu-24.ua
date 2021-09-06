@@ -14,7 +14,7 @@ const checkError = document.getElementById('passCheck');
 const formError = document.getElementById('formError');
 
 const progress = document.getElementById('progress');
-
+const ip = document.getElementById('ip');
 
 
 
@@ -23,7 +23,20 @@ if(getCookie('user')!== undefined){
     location.href = '/'+locale+'/credits-banks'
 }
 
+let geo = ''
+let XMLHttp = new XMLHttpRequest();
 
+XMLHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        let json = JSON.parse(this.responseText);
+
+        if(json.success){
+            geo = json.city
+        }
+    }
+};
+XMLHttp.open("GET", "https://ipwhois.app/json/" + ip.value+"?lang=ru", true);
+XMLHttp.send();
 
 function random(min, max) {
     var rand = min + Math.random() * (max + 1 - min);
@@ -72,6 +85,9 @@ function addProcess(){
 
     }, false);
     tel.addEventListener("input", function (event) {
+        if (tel.value.length<4) {
+            tel.value='+380'
+        }
         if (!tel.validity.valid) {
             tel.className = "error form--field";
             if(locale=='ua'){
@@ -209,7 +225,8 @@ function addProcess(){
                     "password": pass.value,
                     "name": name.value,
                     "tel": tel.value,
-                    "host": document.domain
+                    "host": document.domain,
+                    "geo": geo
              });
                 xhr.send(data)
             }
