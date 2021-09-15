@@ -11,8 +11,8 @@
 
                 <div class="header--block">
 
-                <h2 class="header--h2 wow slideInLeft">{{ 'credit-title'|trans }}</h2>
-            </div>
+                    <h2 class="header--h2 wow slideInLeft">{{ 'credit-title'|trans }}</h2>
+                </div>
                 <div class="row row--space-between">
                     <div class="credit--form">
                         <form id="form" novalidate>
@@ -30,32 +30,26 @@
 
                             <div class="form--item">
                                 <input type="text"  minlength="2"  id="name" required name="name"  class="form--field" placeholder="{{ 'name'|trans }}">
-                                <span class="form--error" id="nameError"></span>
+                                <span class="form--error" id="nameError">{{ 'error_required'|trans }}</span>
                             </div>
-                                <div class="form--item">
-                                    <input type="email" id="email"   name="email" required class="form--field" placeholder="email">
-                                    <span class="form--error" id="emailError"></span>
-                                </div>
-                                <div class="form--item">
-                                    <input type="text" id="tel" value="+380"  pattern="^\+?[3][-\(]?\d{4}\)?-?\d{2}-?\d{2}-?\d{3}$"  name="tel" required  class="form--field" placeholder="телефон">
-                                    <input type="hidden" id="ip" value="{{ ip }}"    name="ip" required  class="form--field" >
-                                    <span class="form--error" id="telError"></span>
-                                </div>
 
+                            <div class="form--item">
+                                <input type="text" id="tel" value="+380"  pattern="^\+?[3][-\(]?\d{4}\)?-?\d{2}-?\d{2}-?\d{3}$"  name="tel" required  class="form--field" placeholder="телефон">
+                                <input type="hidden" id="ip" value="{{ ip }}"    name="ip" required  class="form--field" >
+                                <span class="form--error" id="telError">{{ 'error_required'|trans }}</span>
+                            </div>
+                            <div class="form--item">
+                                <input type="email" id="email"   name="email"  class="form--field" placeholder="email">
+                                <span class="form--error" id="emailError"></span>
+                            </div>
 
-
-                                <div class="form--item">
-                                    <input type="password" id="pass"  minlength="6"  maxlength="32" name="password"  required  class="form--field" placeholder="{{ 'pass'|trans }}">
-                                    <span class="form--error" id="passError"></span>
-
-                                </div>
 
                             <div class="form--item">
                                 <div class="row  form--row">
 
-                                        <input type="checkbox"   required class="form--checkbox" id="scales" checked name="scales"
-                                        >
-                                        <label for="scales">{{ 'form_document'|trans }} <a href="/{{ app.request.locale }}/public-offer">{{ 'form_link'|trans }}.</a></label>
+                                    <input type="checkbox"   required class="form--checkbox" id="scales" checked name="scales"
+                                    >
+                                    <label for="scales">{{ 'form_document'|trans }} <a href="/{{ app.request.locale }}/public-offer">{{ 'form_link'|trans }}.</a></label>
                                 </div>
                                 <span class="form--error" id="passCheck"></span>
                             </div>

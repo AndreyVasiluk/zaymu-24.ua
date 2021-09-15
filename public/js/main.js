@@ -15,7 +15,26 @@ const profileMob = document.querySelector('#profileMob');
 const locale = document.querySelector('#locale').value;
 
 const now = Math.round(new Date().getTime()/1000.0)
+function addAnalytic(user, offer){
+    let xhr = new XMLHttpRequest();
+    let url = "https://zaymu-24.ru/api/add-user-analytics";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            let json = JSON.parse(xhr.responseText);
+            if(json.status===200){
 
+
+            }
+        }
+    };
+    let data = JSON.stringify({
+        "user": user,
+        "offer": offer,
+    });
+    xhr.send(data)
+}
 
 function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
@@ -51,12 +70,7 @@ function setCookie(name, value, options) {
 
     document.cookie = updatedCookie;
 }
-function logOut(){
-    setCookie('user', "", {
-        expires: -1
-    })
 
-}
 function parseData(data) {
     if (!data) return {};
     if (typeof data === 'object') return data;
@@ -121,13 +135,7 @@ if(getCookie('user')!== undefined){
             '                            </div>\n' +
             '                        </a>';
     }
-    if(locale=='ua'){
-        loginBtn.innerHTML = '<a class=" header--btn" onclick="logOut()" href="">Вийти</a>'
-        loginBtn2.innerHTML = '<a class=" header--btn" onclick="logOut()" href="">Вийти</a>'
-    }else {
-        loginBtn.innerHTML = '<a class=" header--btn" onclick="logOut()" href="">Выйти</a>'
-        loginBtn2.innerHTML = '<a class=" header--btn" onclick="logOut()" href="">Выйти</a>'
-    }
+
 
 }
 

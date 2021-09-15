@@ -30,6 +30,11 @@ xhr.onreadystatechange = function() {
             if(res[prop].topValueSwich==true){
                 res[prop].topValue=''
             }
+            let onCl = '';
+            if(getCookie('user')!== undefined) {
+                let d = parseData(getCookie('user'));
+                onCl='onclick="addAnalytic('+d.id+','+res[prop].id+');  "'
+            }
             if(res[prop].top==true){
                 offersTop = 'offers--top-box offers--top-box__'+res[prop].topColor;
                 top = '<div class="offers--top offers--top__'+res[prop].topColor+'">\n' +
@@ -49,25 +54,25 @@ xhr.onreadystatechange = function() {
 
                 });
                 content+='<div class="offers--item '+offersTop+'" >' +top+
-                    '                    <a class="offers--logo" target="_blank" href="'+res[prop].link+'">\n' +
+                    '                    <a class="offers--logo" '+onCl+' target="_blank" href="'+res[prop].link+'">\n' +
                     '                        <img src="'+res[prop].img+'" class="offers--img" alt="'+res[prop].name+'">\n' +
                     '                    </a>\n' +
-                    '                    <a class="offers--1" target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Процентна ставка</div>Від '+res[prop].rateFrom+'%</a>\n' +
-                    '                    <a class="offers--2" target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Сума</div>До '+new Intl.NumberFormat('ru-RU').format(res[prop].amountUp)+'₴</a>\n' +
-                    '                    <a class="offers--3" target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Графік роботи</div>'+res[prop].operatingMode+'</a>\n' +
-                    '                    <a class="offers--4" target="_blank" href="'+res[prop].link+'"><div class="offers--signature"></div>'+res[prop].endorsements+'</a>\n' +
-                    '                    <a href="'+res[prop].link+'" target="_blank" class="btn offers--btn">ПОДАТИ ЗАЯВКУ</a>\n' +
+                    '                    <a class="offers--1" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Процентна ставка</div>Від '+res[prop].rateFrom+'%</a>\n' +
+                    '                    <a class="offers--2" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Сума</div>До '+new Intl.NumberFormat('ru-RU').format(res[prop].amountUp)+'₴</a>\n' +
+                    '                    <a class="offers--3" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Графік роботи</div>'+res[prop].operatingMode+'</a>\n' +
+                    '                    <a class="offers--4" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature"></div>'+res[prop].endorsements+'</a>\n' +
+                    '                    <a href="'+res[prop].link+'" '+onCl+' target="_blank" class="btn offers--btn">ПОДАТИ ЗАЯВКУ</a>\n' +
                     '                </div>';
             }else{
                 content+='<div class="offers--item '+offersTop+'" >\n' +top+
-                    '                    <a class="offers--logo" href="'+res[prop].link+'" target="_blank">\n' +
+                    '                    <a class="offers--logo" '+onCl+' href="'+res[prop].link+'" target="_blank">\n' +
                     '                        <img src="'+res[prop].img+'" class="offers--img" alt="'+res[prop].name+'">\n' +
                     '                    </a>\n' +
-                    '                    <a class="offers--1" target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Процентная ставка</div>От '+res[prop].rateFrom+'%</a>\n' +
-                    '                    <a class="offers--2" target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Сумма</div>До '+new Intl.NumberFormat('ru-RU').format(res[prop].amountUp)+'₴</a>\n' +
-                    '                    <a class="offers--3" target="_blank" href="'+res[prop].link+'"><div class="offers--signature">График работы</div>'+res[prop].operatingMode+'</a>\n' +
-                    '                    <a class="offers--4" target="_blank" href="'+res[prop].link+'"><div class="offers--signature"></div>'+res[prop].endorsements+'</a>\n' +
-                    '                    <a href="'+res[prop].link+'" target="_blank" class="btn offers--btn">ПОДАТЬ ЗЯВКУ</a>\n' +
+                    '                    <a class="offers--1" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Процентная ставка</div>От '+res[prop].rateFrom+'%</a>\n' +
+                    '                    <a class="offers--2" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature">Сумма</div>До '+new Intl.NumberFormat('ru-RU').format(res[prop].amountUp)+'₴</a>\n' +
+                    '                    <a class="offers--3" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature">График работы</div>'+res[prop].operatingMode+'</a>\n' +
+                    '                    <a class="offers--4" '+onCl+' target="_blank" href="'+res[prop].link+'"><div class="offers--signature"></div>'+res[prop].endorsements+'</a>\n' +
+                    '                    <a href="'+res[prop].link+'" '+onCl+' target="_blank" class="btn offers--btn">ПОДАТЬ ЗЯВКУ</a>\n' +
                     '               </div>';
             }
 
