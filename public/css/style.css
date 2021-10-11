@@ -1279,45 +1279,43 @@ ul {
       margin-top: 4px; }
     .calculator--row {
       margin-bottom: 20px; } }
-.contacts {
-  padding-top: 60px; }
-  .contacts--box {
-    position: relative;
-    min-height: 600px;
-    height: auto;
-    width: 600px;
-    padding-bottom: 60px; }
-  .contacts--bg {
-    background-image: url("../img/contact_bg.png");
-    background-position: bottom;
-    background-size: 100% auto;
-    min-height: 800px;
-    width: 50%;
-    background-repeat: no-repeat; }
-  .contacts--calculator {
-    margin-top: 0; }
-  .contacts--email {
-    background-image: url("../img/email.png");
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    background-position: center; }
-    .contacts--email__1 {
-      background-image: url("../img/location.png"); }
-    .contacts--email__2 {
-      background-image: url("../img/phone.png"); }
-  .contacts--email-text {
-    margin-left: 15px;
-    color: #272727;
-    line-height: 1.2;
-    font-size: 1.6em; }
-  .contacts--p {
-    color: #272727;
-    line-height: 1.2;
-    font-size: 1.5em; }
-    .contacts--p a {
-      color: #a4dddc;
-      font-weight: bold; }
+.contacts--box {
+  position: relative;
+  min-height: 600px;
+  height: auto;
+  width: 600px;
+  padding-bottom: 60px; }
+.contacts--bg {
+  background-image: url("../img/contact_bg.png");
+  background-position: bottom;
+  background-size: 100% auto;
+  min-height: 800px;
+  width: 50%;
+  background-repeat: no-repeat; }
+.contacts--calculator {
+  margin-top: 0; }
+.contacts--email {
+  background-image: url("../img/email.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-position: center; }
+  .contacts--email__1 {
+    background-image: url("../img/location.png"); }
+  .contacts--email__2 {
+    background-image: url("../img/phone.png"); }
+.contacts--email-text {
+  margin-left: 15px;
+  color: #272727;
+  line-height: 1.2;
+  font-size: 1.6em; }
+.contacts--p {
+  color: #272727;
+  line-height: 1.2;
+  font-size: 1.5em; }
+  .contacts--p a {
+    color: #a4dddc;
+    font-weight: bold; }
 
 @media (max-width: 1318px) {
   .contacts--box {
@@ -1361,11 +1359,16 @@ ul {
     .contacts--calculator.calculator--box {
       box-shadow: none; } }
 @media (max-width: 700px) {
-  .contacts--bg {
-    min-height: 750px; } }
+  .contacts {
+    margin-top: -55px; }
+    .contacts--bg {
+      min-height: 750px; } }
 @media (max-width: 600px) {
   .contacts--bg {
-    min-height: 700px; } }
+    min-height: 700px; }
+  .contacts--email-text {
+    max-width: 80%;
+    margin-left: 2px; } }
 @media (max-width: 500px) {
   .contacts--bg {
     min-height: 650px; } }

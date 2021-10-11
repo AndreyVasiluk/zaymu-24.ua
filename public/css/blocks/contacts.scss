@@ -1,5 +1,5 @@
 .contacts{
-  padding-top: 60px;
+
 
   &--box{
     position: relative;
@@ -141,6 +141,8 @@
 }
 @media (max-width:700px){
   .contacts {
+    margin-top: -55px;
+
     &--bg{
 
       min-height: 750px;
@@ -155,6 +157,10 @@
     &--bg{
       min-height: 700px;
 
+    }
+    &--email-text{
+      max-width: 80%;
+      margin-left: 2px;
     }
   }
 }
