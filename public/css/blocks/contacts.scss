@@ -117,7 +117,7 @@
     &--bg{
       background-position: bottom;
       background-size: 100% auto;
-      min-height: 800px;
+      min-height: 705px;
       width: 100%;
       background-repeat: no-repeat;
 
@@ -145,7 +145,7 @@
 
     &--bg{
 
-      min-height: 750px;
+      min-height: 650px;
 
 
 
@@ -155,7 +155,7 @@
 @media (max-width:600px){
   .contacts {
     &--bg{
-      min-height: 700px;
+      min-height: 600px;
 
     }
     &--email-text{
@@ -167,7 +167,7 @@
 @media (max-width:500px){
   .contacts {
     &--bg{
-      min-height: 650px;
+      min-height: 550px;
 
     }
   }

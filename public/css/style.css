@@ -1347,7 +1347,7 @@ ul {
   .contacts--bg {
     background-position: bottom;
     background-size: 100% auto;
-    min-height: 800px;
+    min-height: 705px;
     width: 100%;
     background-repeat: no-repeat; }
   .contacts--calculator {
@@ -1362,16 +1362,16 @@ ul {
   .contacts {
     margin-top: -55px; }
     .contacts--bg {
-      min-height: 750px; } }
+      min-height: 650px; } }
 @media (max-width: 600px) {
   .contacts--bg {
-    min-height: 700px; }
+    min-height: 600px; }
   .contacts--email-text {
     max-width: 80%;
     margin-left: 2px; } }
 @media (max-width: 500px) {
   .contacts--bg {
-    min-height: 650px; } }
+    min-height: 550px; } }
 @media (max-width: 400px) {
   .contacts--bg {
     min-height: 450px; }
